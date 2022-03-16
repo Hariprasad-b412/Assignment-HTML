@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Student Registration Form</title></head>
+    <body>
+        
+
+        <form action="/hello" autocomplete="off">
+            <fieldset style="max-width:500px;">
+            <legend>Student Registration Form</legend>
+            
+            <label for= "name">Name:&nbsp;&nbsp;&nbsp;</label>
+            <input type="text" name="name" placeholder="Your name..." id="name" required><br>
+
+            <label for="address">Address:</label>
+        <input type="text" name="address" placeholder="Your address..." id="address" ><br>
+       
+            <label for= "email">Email:&nbsp;&nbsp;&nbsp;</label>
+            <input type="email" name="email" placeholder="Your email..." id="email" required><br>
+
+            <label for= "mob">Mobile:&nbsp;</label>
+            <input type="tel" name="mob" placeholder="mob no..." id="mob"><br>
+
+            <label for= "u3">Birth Date:</label>
+            <input type="date" name="Birth"  id="u3" min="2015-01-01"><br>
+            </fieldset>
+
+            <fieldset style="max-width:500px;">
+                <legend>Cities</legend>
+
+            <label for= "u5">Different Cities</label>
+            <input list="langs" name="lang" id="u5"><br>
+            <datalist id="langs">
+                <option value="Bangalore">
+                <option value="Mysore">   
+                <option value="Chennai">
+                <option value="Hyderabad">
+                <option value="Kerala">
+                <option value="Pune">
+        </fieldset>
+             </datalist>
+           
+           
+                <fieldset style="max-width:500px;">
+                    <legend>Courses</legend>
+
+              <label for="course">Courses:</label>
+              <select id="course"  >
+               <option value="Select">Select</option> 
+               <option value="JAVA">JAVA</option>
+               <option value="HTML">HTML</option>
+               <option value="CSS">CSS</option>
+               <option value="C++">C++</option>
+               <option value="RUBY">RUBY</option>
+               <option value="PYTHON">PYTHON</option>
+                   </select>
+           </fieldset>
+          
+           <fieldset style="max-width:500px;">
+            <legend> Hobbies </legend>
+                <input type="checkbox" name="Music"  id="c1"><br>
+                <label for= "c1">Music:</label>  <br>
+    
+                <input type="checkbox" name="Drawing"  id="c2"><br>
+                <label for= "c2">Drawing:</label>  <br>
+    
+                <input type="checkbox" name="Sports"  id="c3"><br>
+                <label for= "c3">Sports:</label>  <br>
+            </fieldset>
+
+            <fieldset style="max-width:500px;">
+                <legend> Time Slot</legend>
+
+                <input type="radio" name="slot"  id="r1" value="Begin"><br>
+                 <label for= "r1">Begin[8:30]</label>  <br>
+                 <input type="radio" name="slot"  id="r2"value="Lunch"><br>
+                 <label for= "r2">Lunch[1:00]</label>  <br>
+                 <input type="radio" name="slot"  id="r2"value="End"><br>
+                 <label for= "r2">End[5:30]</label>  <br>
+            </fieldset>
+
+           <input type="submit" value="Submit">
+           <input type="reset" value="reset">
+
+           </form>
+    </body>
+</html>
